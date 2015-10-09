@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-<script src="js/user.js"></script>
-<script src="js/angular-animate.js"></script>
+<script src="../js/user.js"></script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="../css/home.css">
 <head>
     <meta charset="UTF-8">
-    <title>QuestNote</title>
+    <title>home</title>
 </head>
-<body ng-app="userApp" ng-controller="sessionCtrl" background="images/Desktop-HD-Wallpaper-Free-Download-1.jpg">
-<div class="central">
+<body>
+<div ng-app="userApp" ng-controller="userLoginCtrl" class="central">
     <table width="100%" border="0">
         <tr>
             <td colspan="2">
@@ -22,7 +21,7 @@
                 <p>Login: </p>
             </td>
             <td>
-                <p><input type="text" ng-model="user.id" ng-disabled="true" title="Login"></p>
+                <p><input type="text" ng-model="user.id" ng-disabled="disableEditing"></p>
             </td>
         </tr>
         <tr>
@@ -53,27 +52,11 @@
             <td>
                 <button ng-click="editorToggle()">{{buttonText}}</button>
             </td>
-            <td>
-                <button  class="quest" ng-click="addQuest()">Add quest</button>
-            </td>
         </tr>
     </table>
 </div>
-<div ng-hide="upQuest" class="quest-menu-overlay animate-show">
-    <div ng-hide="upQuest" class="quest-menu animate-show">
-        <form>
-            <fieldset>
-                <legend>Quest menu</legend>
-                <p>Title:</br><input type="text" ng-model="quest.title"></p>
-                <p>Description:</br><input type="text" ng-model="quest.description"></p>
-            </fieldset>
-        </form>
+</body>
 
-
-        <button  class="quest" ng-click="addQuest()">Add quest</button>
-    </div>
-
-</div>
 
 </body>
 </html>

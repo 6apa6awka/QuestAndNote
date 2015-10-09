@@ -1,13 +1,14 @@
 /**
  * Created by First on 05.10.2015.
  */
-var app = angular.module("userApp", []);
+var app = angular.module("userApp", ['ngAnimate']);
 
 var cookiesValues;
 
 app.controller("sessionCtrl", function($scope, $http){
     $scope.disableEditing = true;
     $scope.buttonText = "Edit";
+    $scope.upQuest = true;
     $scope.editorToggle = function(){
         $scope.disableEditing = !$scope.disableEditing;
         if($scope.buttonText == "Edit"){
@@ -23,6 +24,9 @@ app.controller("sessionCtrl", function($scope, $http){
                 });
             $scope.buttonText = "Edit";
         }
+    };
+    $scope.addQuest = function(){
+        $scope.upQuest = !$scope.upQuest;
     };
     if(document.cookie) {
         userLoginCtrl($scope, $http);

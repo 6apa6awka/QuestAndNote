@@ -9,6 +9,5 @@ import java.util.List;
 /**
  * Created by eorlov on 17.07.2015.
  */
-@Repository
 public interface UserRepository extends MongoRepository<UserEntity, String> {
 }

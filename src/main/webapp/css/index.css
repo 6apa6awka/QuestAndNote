@@ -1,0 +1,18 @@
+.central.ng-scope{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+h1.title {
+    margin-bottom: 5%;
+}
+
+.table-input {
+    display: table;
+}
+
+.table-column-input {
+    display: table-cell;
+}
+input{
+    margin-left: 10%;
+}

@@ -1,0 +1,63 @@
+input.title {
+    margin-left: 30px;
+    width: 486px;
+    height: 30px;
+}
+input.description {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 300px;
+    height: 450px;
+	float:left;	
+}
+.desc-a-opt{
+	box-sizing: border-box;
+}
+.options {  
+	float:left;  
+    width: 171px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+input.conditions {
+    height: 40px;
+}
+input.winner {
+    height: 40px;
+	margin-top: 20px;
+}
+input.groups {
+    height: 40px;
+	margin-top: 20px;
+	margin-bottom: 290px
+}
+input.reward-desc { 
+	margin-top: 465px;
+	margin-left: 60px;
+	height:30px;
+	width:210px;
+	position:absolute;
+}
+input.reward-img {
+	height:60px;
+	width:60px;
+	margin-left:270px;
+	margin-top:435px;
+	position:absolute;
+}
+input.sender {
+	margin-top: 470px;
+	margin-left: 30px;
+	position: absolute;
+	width: 300px;
+}
+input.return {
+	margin-top: 510px;
+	margin-left: 30px;
+	position: absolute;
+}
+input.save {
+	margin-top: 115px;
+	margin-left: 300px;
+	position: absolute;
+}

@@ -1,0 +1,26 @@
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="../js/quest-menu.js"></script>
+<link href="../css/questsmenu.css" rel="stylesheet">
+<body ng-app="questMenuApp" ng-controller="questMenuCtrl" class="quest-container">
+<div class="menu-panel-quest">
+    <button class="menu-button-quest" ng-click="getNewQuestPage()">
+        {{firstButton}}
+    </button>
+    <button class="menu-button-quest">
+        Finished
+    </button>
+    <button class="menu-button-quest">
+        Owned
+    </button>
+    <button class="menu-button-quest">
+        Filters
+    </button>
+    <button class="menu-button-quest">
+        Sorted By
+    </button>
+</div>
+<iframe class="quests-page-content" src="{{pageLink}}" scrolling="no">
+</iframe>
+</body>
+</html>

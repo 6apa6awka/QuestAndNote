@@ -5,7 +5,8 @@ package org.first.questnote.rest;
  */
 public enum AnswerCode {
     INCORRECT_PASSWORD("Incorrect password"), LOGGING_OK("You successfully login"),
-    CREATED_NEW_USER("New user was created"), OK("Successfully running query");
+    CREATED_NEW_USER("New user was created"), OK("Successfully running query"),
+    INCORRECT_USER("User not found");
 
     private String message;
 

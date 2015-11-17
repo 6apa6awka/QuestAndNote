@@ -1,62 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-<script src="../js/user.js"></script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/home.css">
-<head>
-    <meta charset="UTF-8">
-    <title>home</title>
-</head>
-<body>
-<div ng-app="userApp" ng-controller="userLoginCtrl" class="central">
-    <table width="100%" border="0">
-        <tr>
-            <td colspan="2">
-                <h1 class="title">Contact information</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width="9%">
-                <p>Login: </p>
-            </td>
-            <td>
-                <p><input type="text" ng-model="user.id" ng-disabled="disableEditing"></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Name:</p>
-            </td>
-            <td>
-                <p><input type="text" ng-model="user.name" ng-disabled="disableEditing"></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Second name:</p>
-            </td>
-            <td>
-                <p><input type="text" ng-model="user.secondName" ng-disabled="disableEditing"></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Birth Date:</p>
-            </td>
-            <td>
-                <p><input type="text" ng-model="user.birthDate" ng-disabled="disableEditing" placeholder="dd.mm.yyyy"></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button ng-click="editorToggle()">{{buttonText}}</button>
-            </td>
-        </tr>
-    </table>
+<script src="../js/home.js"></script>
+<link href="../css/home.css" rel="stylesheet">
+<body ng-app="homeApp" ng-controller="homeCtrl">
+<div class="menu-panel">
+    <button class="menu-button">
+        Home
+    </button>
+    <button class="menu-button">
+        Quests
+    </button>
+    <button class="menu-button">
+        Status
+    </button>
+    <button class="menu-button">
+        Contacts
+    </button>
+    <button class="menu-button">
+        Groups
+    </button>
 </div>
-</body>
-
-
+<iframe class="index-page-content" src="{{menuLink}}" scrolling="no">
+</iframe>
 </body>
 </html>

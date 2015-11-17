@@ -4,14 +4,13 @@
 var app = angular.module("loginApp", []);
 app.controller("loginCtrl", function($scope, $http){
     $scope.loginEnter = function(){
-        $http.get("/login?id="+$scope.login+"&password="+$scope.password)
-            .success(function(response) {
-                $scope.message = response.message;
-                if(response.answerCode == "LOGGING_OK"){
-                    document.cookie = $scope.login;
-                    window.location = '/pages/home.html';
-                }
-            });
-
+        $http.defaults.headers.post["Content-Type"] = "application/json";
+        $http.post('/login', {'id' : $scope.login, 'password' : $scope.password}).success(function(response) {
+            $scope.message = response.message;
+            if(response.answerCode == "LOGGING_OK"){
+                document.cookie = $scope.login;
+                window.location = '/pages/home.html';
+            }
+        });
     }
 });

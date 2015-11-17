@@ -1,0 +1,30 @@
+input.title {
+    width: 460px;
+    height: 25px;
+	float: left;
+}
+input.description {
+    height: 15px;
+    width: 300px;
+	float: left;
+}
+input.end-by{
+	width: 90px;
+	height: 25px;
+	float: left;
+}
+input.raiting{
+	width: 80px;
+	height: 15px;
+	float: left;
+	line-height: 15px;
+}
+input.owner{
+	width: 170px;
+	height: 15px;
+	float: left;
+	line-height: 15px;
+}
+.quest-container {
+    margin-bottom: 55px;
+}

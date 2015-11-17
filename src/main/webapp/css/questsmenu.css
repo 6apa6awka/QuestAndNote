@@ -1,0 +1,21 @@
+.menu-button-quest{	
+	width: 114px;
+	float: left;
+	background-color: #FFA900;
+	border-color: #FF9900;
+}
+
+iframe.quests-page-content{
+    width: 566px;
+    height: 715px;
+	border-color: #FF9900;
+	overflow:hidden;
+}
+
+.menu-panel-quest{
+	box-sizing: border-box;
+}
+
+.quest-container{
+	margin: 0px;
+}
